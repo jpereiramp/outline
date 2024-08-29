@@ -238,16 +238,16 @@ const embeds: EmbedDescriptor[] = [
   }),
   ...(env.DROPBOX_APP_KEY
     ? [
-        new EmbedDescriptor({
-          title: "Dropbox",
-          keywords: "file document",
-          regexMatch: [
-            new RegExp("^https?://(www.)?dropbox.com/(s|scl)/(.*)$"),
-          ],
-          icon: <Img src="/images/dropbox.png" alt="Dropbox" />,
-          component: Dropbox,
-        }),
-      ]
+      new EmbedDescriptor({
+        title: "Dropbox",
+        keywords: "file document",
+        regexMatch: [
+          new RegExp("^https?://(www.)?dropbox.com/(s|scl)/(.*)$"),
+        ],
+        icon: <Img src="/images/dropbox.png" alt="Dropbox" />,
+        component: Dropbox,
+      }),
+    ]
     : []),
   new EmbedDescriptor({
     title: "Figma",
@@ -633,11 +633,8 @@ const embeds: EmbedDescriptor[] = [
     keywords: "iframe webpage",
     placeholder: "Paste a URL to embed",
     icon: <Img src="/images/embed.png" alt="Embed" />,
-    defaultHidden: false,
-    matchOnInput: false,
     regexMatch: [new RegExp("^https?://(.*)$")],
     transformMatch: (matches: RegExpMatchArray) => matches[0],
-    hideToolbar: true,
   }),
 ];
 
