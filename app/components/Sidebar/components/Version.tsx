@@ -12,7 +12,7 @@ export default function Version() {
   React.useEffect(() => {
     async function loadReleases() {
       const res = await fetch(
-        "https://api.github.com/repos/outline/outline/releases"
+        "https://github.com/jpereiramp/outline/releases"
       );
       const releases = await res.json();
 
@@ -53,9 +53,9 @@ export default function Version() {
                 {releasesBehind === 0
                   ? t("Up to date")
                   : t(`{{ releasesBehind }} versions behind`, {
-                      releasesBehind,
-                      count: releasesBehind,
-                    })}
+                    releasesBehind,
+                    count: releasesBehind,
+                  })}
               </LilBadge>
             </>
           )}
