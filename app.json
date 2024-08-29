@@ -2,8 +2,14 @@
   "name": "Outline",
   "description": "Open source wiki and knowledge base for growing teams",
   "website": "https://www.getoutline.com/",
-  "repository": "https://github.com/outline/outline",
-  "keywords": ["wiki", "team", "node", "markdown", "slack"],
+  "repository": "https://github.com/jpereiramp/outline",
+  "keywords": [
+    "wiki",
+    "team",
+    "node",
+    "markdown",
+    "slack"
+  ],
   "success_url": "/",
   "formation": {
     "web": {
