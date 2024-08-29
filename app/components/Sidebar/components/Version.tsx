@@ -42,7 +42,7 @@ export default function Version() {
   return (
     <SidebarLink
       target="_blank"
-      href="https://github.com/outline/outline/releases"
+      href="https://github.com/jpereiramp/outline/releases"
       label={
         <>
           v{version}
